@@ -1,0 +1,56 @@
+= Book of Vaadin
+Vaadin 7 Edition - 4th Revision
+Volume 1
+:author: Marko Grönroos
+:doctype: book
+:source-highlighter: coderay
+:pagenums:
+:toc: macro
+:front-cover-image: image:img/cover.png[Front Cover,655,1074]
+
+[colophon]
+= Book of Vaadin
+Marko Grönroos +
+Vaadin Ltd
+
+[%hardbreaks]
+Vaadin 7 Edition - 4th Revision
+Published 2014-08-25
+Vaadin Framewok 7.3
+
+[%hardbreaks]
+This book can be download for free at http://vaadin.com/book
+
+Published by
+
+::
+Vaadin Ltd +
+Ruukinkatu 2-4 +
+20540 Turku +
+Finland
+
+:numbered!:
+[abstract]
+Abstract
+
+Vaadin is an AJAX web application development framework that enables developers to build high-quality user interfaces with Java, both on the server- and client-side. It provides a set of libraries of ready-to-use user interface components and a clean framework for creating your own components. The focus is on ease-of-use, re-usability, extensibility, and meeting the requirements of large enterprise applications.
+
+[%hardbreaks]
+Copyright (C) 2000-2014 Vaadin Ltd
+All rights reserved. This work is licensed under the Creative Commons CC-BY-ND License Version 2.0.
+
+Printed by Bookwell Oy in Juva, Finland, 2014.
+
+[%hardbreaks]
+ISBN 978-952-68006-4-6 (print)
+ISBN 978-952-68006-5-3 (PDF)
+ISBN 978-952-68006-2-2 (volume set)
+
+toc::[]
+
+include::book-preface.ad[]
+
+:numbered:
+
+include::chapter-introduction.ad[]
+include::chapter-architecture.ad[]

@@ -1,0 +1,37 @@
+== Problems
+
+=== AsciiDoc
+
+==== Referencing chapters/sections/figures
+- is it possible to crossreference chapters? We'd like to link to other chapters and sections and show their chapter/section number and current header in text. Example: "Debugging your code is described in Section 13.6, ''Debugging client-side code''."
+- is it possible to reference an image/figure in the same way? Example: "As seen in ''Figure 2. An owl'', owls have a brown fur."
+
+==== TOC
+- Can you mark extra headers into TOC or otherwise customize content of TOC? For example we have the book split up into two volumes and they are noted as a level above chapters.
+- Is it possible to produce a pdf with both volume's TOC at once but still have only volumes content in the output?
+- We have a chapter-specific TOC in the beginning of every chapter. Is it possible to add these partial TOC's with correct page numbers in AsciiDoc?
+- Our book is split into two volumes but the TOC in one volume lists them both. They are grouped by an extra header "Volume 1" and "Volume 2" in the TOC. Can we add those extra headers to AsciiDoc TOC?
+
+==== Title page, abstract and preface
+- Title page documentaiton is missing in http://asciidoctor.org/docs/user-manual/#title-page. Is there some kind of manual or something listing all allowed keywords to manipulate the title page? I've got bits and pieces out of code examples so far.
+- I feel like I got quite little control over the title page. In our book we have six pieces of information on the page: book name, edition, volume number, author, year, and company name. With asciidoc-pdf, I was only able to get three rows to the page and haven't found a way of managing their position or style.
+- I wouldn't want the preface headers to be part of the TOC. I got around the problem in abstract by not marking the a header and it rendered the first row in an own style. Can I mark somehow not to include certain headers to TOC?
+
+==== Other
+- Can you have indented lists without bullet points an no extra lineheight? We have these at least in two places, one for our office address and list of contributors. I "hacked" it now by doing a labeled list with one item and no term before the double-colon, combined with hardbreaks:
+::
+Steve +
+Jim +
+Matt +
+
+- We have different sizing rules for images for web and for the printed book. Is this possible to mark with AsciiDoc?
+
+- We have conditionals for showing text. All what is written ends up on the web but part of chapter contents are removed when we produce the pdf for printing. Is this possible to achieve?
+
+=== Asciidoc-pdf
+- Is AsciiDoc-pdf the best and recommended tool today to produce PDF's out of Asciidoc content?
+- I wasn't able to have manual placement of toc "asciidoctor: WARNING: conversion missing in backend pdf for toc"
+- Inline images doesn't seem to work "asciidoctor: WARNING: conversion missing in backend pdf for inline_image"
+- Having an :author: name with characters outside ascii gives an encoding warning on compilation, but it still outputs correctly within the PDF. In the file's metadata, there are charset issues. Our author's name is Marko Grönroos. Warning message is "/Library/Ruby/Gems/2.0.0/gems/pdf-core-0.2.5/lib/pdf/core/pdf_object.rb:55: warning: regexp match /.../n against to UTF-8 string"
+- image positioning with roles doesn't seem to work (ie. centering of image)
+- Can you have a different page numbering scheme in the beginning of the book? We have roman numbers for abstract, TOC and preface four 14 pages, and the first page of the first actual chapter has page number 1.
